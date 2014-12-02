@@ -5,12 +5,12 @@ machine:
 dependencies:
   override:
     - docker info
-    - docker build -t hackerU-Advance-Linux-Group/docker_in_docker .
+    - docker build -t advance/docker_in_docker .
     
 test:
   override:
      - echo override goes here
-     - docker run hackerU-Advance-Linux-Group/docker_in_docker
+     - docker run advance/docker_in_docker
      #sudo -u gitlab_ci_runner -H 'nvm ls; nvm install 0.10; nvm use 0.10'
 
    #  - docker run -d -p 9200:9200 brownman/docker-gitlab-ci-runner; sleep 10
